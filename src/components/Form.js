@@ -2,7 +2,7 @@ import axios from "axios"
 import style from "./Form.css"
 
 const Form = (props) => {
-    const url = "https://ngsd-test-backend.vercel.app/"
+    const url = "http://localhost:5000/"
     function exportJSONToCSV() {
         // Donwload data from database
         axios(url, { 
