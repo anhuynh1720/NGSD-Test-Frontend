@@ -2,10 +2,10 @@ import axios from "axios"
 import style from "./Form.css"
 
 const Form = (props) => {
-
+    const url = "https://ngsd-test-backend.vercel.app/"
     function exportJSONToCSV() {
         // Donwload data from database
-        axios("http://localhost:5000", { 
+        axios(url, { 
             params: {
                 // Get value from user input
                 fromDate : document.getElementById("fromDate").value, 
@@ -40,7 +40,7 @@ const Form = (props) => {
 
     function getData() {
         // Get data from database
-        axios("http://localhost:5000", { 
+        axios(url, { 
         params: {
             // Get value from user input
             fromDate : document.getElementById("fromDate").value, 
